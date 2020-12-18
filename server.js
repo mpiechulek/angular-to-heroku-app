@@ -2,9 +2,11 @@ const express = required('express');
 const path = required('path');
 const app = express();
 
+console.log('fdsfdfdsdf');
+
 app.use(express.static(_dirname + '/dist/angular-to-heroku-app'));
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '/dist/angular-to-heroku-app/index.thml'));
 });
 
