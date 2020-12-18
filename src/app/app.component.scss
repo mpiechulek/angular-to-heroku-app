@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:pink;
+    height: 100vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;    
+    font-size: 36px;
+}
+
+a:hover{
+    color: gray;
+}
+
+a:active{
+    color: black;
+}
