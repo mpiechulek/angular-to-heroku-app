@@ -6,7 +6,7 @@ console.log('fdsfdfdsdf');
 
 app.use(express.static(_dirname + '/dist/angular-to-heroku-app'));
 
-app.get('/*', (req, res) => {
+app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/angular-to-heroku-app/index.thml'));
 });
 
